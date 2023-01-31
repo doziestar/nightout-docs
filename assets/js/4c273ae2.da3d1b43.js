@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknightout_docs=self.webpackChunknightout_docs||[]).push([[79],{346:t=>{t.exports=JSON.parse('{"label":"hola","permalink":"/nightout-docs/blog/tags/hola","allTagsPath":"/nightout-docs/blog/tags","count":1}')}}]);
