@@ -3,6 +3,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 
-export default function Home() {
+export default function HomepageFeatures() {
   return <Redirect to="/" />;
 }
