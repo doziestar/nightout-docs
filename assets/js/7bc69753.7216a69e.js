@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknightout_docs=self.webpackChunknightout_docs||[]).push([[298],{1786:o=>{o.exports=JSON.parse('{"label":"hello","permalink":"/docs/intro/blog/tags/hello","allTagsPath":"/docs/intro/blog/tags","count":2}')}}]);

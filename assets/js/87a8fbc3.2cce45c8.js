@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknightout_docs=self.webpackChunknightout_docs||[]).push([[285],{5283:o=>{o.exports=JSON.parse('{"label":"facebook","permalink":"/Nightout-docs/blog/tags/facebook","allTagsPath":"/Nightout-docs/blog/tags","count":1}')}}]);
