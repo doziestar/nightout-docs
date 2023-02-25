@@ -3,9 +3,14 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { default: mdxMermaid } = require("mdx-mermaid");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
   title: "Nightout Docs",
   tagline: "Nightout Docs",
   favicon: "img/favicon.ico",
@@ -45,7 +50,7 @@ const config = {
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
@@ -54,6 +59,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          remarkPlugins: [mdxMermaid],
         },
         blog: {
           showReadingTime: true,
@@ -65,7 +71,8 @@ const config = {
         theme: {
           // customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+        // remarkPlugins: [mdxMermaid],
+      },
     ],
   ],
 
@@ -141,7 +148,6 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Nightout, Inc.`,
       },
 
-
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -150,4 +156,3 @@ const config = {
 };
 
 module.exports = config;
-

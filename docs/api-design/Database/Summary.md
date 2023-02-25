@@ -7,22 +7,7 @@
 
 ### For a complete reference, please see the database design document.
 
-## This document is organized as follows:
-1. User
-2. Location
-3. Place
-4. Event
-5. Itinerary
-6. Menu
-7. Business
-8. Reservation
-9. Reward
-10. Message
-11. Coupon
-12. Group Booking
-13. Social Share
-14. Integrations
-
+## Database Models
 
 **Currently, the following database models are ongoing:**
 
