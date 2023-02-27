@@ -80,12 +80,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/nighout.png",
+      mermaid: {
+        options: {
+          maxTextSize: 50,
+        },
+      },  
       navbar: {
         title: "Nightout Docs",
         logo: {
           alt: "Nightout logo",
-          src: "img/logo.svg",
+          src: "img/night.svg",
         },
         items: [
           {
@@ -96,7 +101,7 @@ const config = {
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/CNC-Technologies/nightout-docs",
             label: "GitHub",
             position: "right",
           },
@@ -114,6 +119,7 @@ const config = {
           //     },
           //   ],
           // },
+        
           {
             title: "Community",
             items: [
@@ -140,18 +146,22 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/CNC-Technologies/nightout-docs",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Nightout, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Placio, Inc.`,
       },
 
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      markdown: {
+        mermaid: true
+      },
+      themes: ["@docusaurus/theme-mermaid"],
     }),
 };
 
