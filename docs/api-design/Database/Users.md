@@ -50,3 +50,7 @@
     Follow-->|belongs to|User;
     Profile-->|belongs to|User;
 ```
+
+![User Model](/docs/api-design/img/user.png "User model")
+
+## User API endpoints:
