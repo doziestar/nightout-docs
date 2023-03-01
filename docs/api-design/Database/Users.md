@@ -54,3 +54,9 @@
 ![User Model](/docs/api-design/img/user.png "User model")
 
 ## User API endpoints:
+- GET /users
+- GET /users/:id
+- POST /users
+- PUT /users/:id
+- DELETE /users/:id
+
