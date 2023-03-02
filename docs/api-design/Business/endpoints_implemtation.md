@@ -1,5 +1,20 @@
 # Business Endpoint Implementation
 
+**Business**
+
+- POST /api/businesses - Create a new business
+- GET /api/businesses/:id - Retrieve a specific business by ID
+- PUT /api/businesses/:id - Update an existing business by ID
+- DELETE /api/businesses/:id - Delete a business by ID
+- GET /api/businesses - Retrieve a list of businesses (optionally filtered by query parameters)
+
+    - name: Filter businesses by name
+    - category: Filter businesses by category (e.g. restaurant, hotel, retail)
+    - location: Filter businesses by location (e.g. city, state, zip code)
+    - sort: Sort businesses by a specific field (e.g. name, category, created_at)
+    - limit: Limit the number of businesses returned in the response
+offset: Skip a certain number of businesses in the result set
+
 ```python
 
 from fastapi import FastAPI, Query

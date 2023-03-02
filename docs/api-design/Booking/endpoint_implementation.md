@@ -1,5 +1,21 @@
 # Booking Endpoint Implementation
 
+### Endpoints
+- POST /api/bookings - Create a new booking for a specific event and user
+- GET /api/bookings/:id - Retrieve a specific booking by ID
+- PUT /api/bookings/:id - Update an existing booking by ID
+- DELETE /api/bookings/:id - Delete a booking by ID
+Ticket
+- GET /api/bookings - Retrieve a list of bookings (optionally filtered by query parameters)
+
+    - user_id: Filter bookings by user ID
+    - event_id: Filter bookings by event ID
+    - status: Filter bookings by status (e.g. confirmed, pending, cancelled)
+    - sort: Sort bookings by a specific field (e.g. event_id, created_at)
+    - limit: Limit the number of bookings returned in the response
+    - offset: Skip a certain number of bookings in the result set
+
+
 ```python
 
 from fastapi import APIRouter, Query
