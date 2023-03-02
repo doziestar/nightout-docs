@@ -32,13 +32,7 @@
 
 - A business can create multiple events (one-to-many)
 
-**Booking**
 
-***Relationships***:
-
-- A booking belongs to a user (one-to-many)
-- A booking belongs to an event (one-to-many)
-- A booking belongs to a ticket (one-to-many)
 
 **Ticket**
 
@@ -47,12 +41,7 @@
 - A ticket belongs to an event (one-to-many)
 - A ticket can have multiple bookings (one-to-many)
 
-**Payment**
 
-***Relationships***:
-
-- A payment belongs to a user (one-to-many)
-- A payment belongs to a booking (one-to-many)
 
 
 
@@ -91,33 +80,7 @@ class Event(Base):
     tickets = relationship("Ticket", back_populates="event")
 
 
-class User(Base):
-    __tablename__ = "user"
-    id = Column(Integer, primary_key=True, index=True)
-    email = Column(String, unique=True, index=True)
-    hashed_password = Column(String)
-    is_active = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
 
-    bookings = relationship("Booking", back_populates="user")
-    payments = relationship("Payment", back_populates="user")
-    notifications = relationship("Notification", back_populates="user")
-
-
-class Booking(Base):
-    __tablename__ = "booking"
-    id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("user.id"))
-    event_id = Column(Integer, ForeignKey("event.id"))
-    ticket_id = Column(Integer, ForeignKey("ticket.id"))
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
-
-    user = relationship("User", back_populates="bookings")
-    event = relationship("Event", back_populates="bookings")
-    ticket = relationship("Ticket", back_populates="bookings")
-    payment = relationship("Payment", back_populates="booking")
 
 
 class Ticket(Base):
@@ -133,17 +96,7 @@ class Ticket(Base):
     bookings = relationship("Booking", back_populates="ticket")
 
 
-class Payment(Base):
-    __tablename__ = "payment"
-    id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("user.id"))
-    booking_id = Column(Integer, ForeignKey("booking.id"))
-    amount = Column(Integer)
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
 
-    user = relationship("User", back_populates="payments")
-    booking = relationship("Booking", back_populates="payment")
 
 
 ```
