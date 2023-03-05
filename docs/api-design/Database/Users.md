@@ -51,7 +51,7 @@
     Profile-->|belongs to|User;
 ```
 
-![User Model](/docs/api-design/img/user.png "User model")
+<!-- ![User Model](img/user.png "User model") -->
 
 ## User API endpoints:
 - GET /users (list of users)
