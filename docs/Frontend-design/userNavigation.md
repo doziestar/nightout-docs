@@ -1,6 +1,6 @@
 # UserNavigation
 
-# The User Navigation is designed for both Individual and Businesses, the objective is to create avenue for users to have their separate account navigation bar after registration where they can continue to access details as they are on the interface page upon successful login; details in the  include the following for individual:
+# The User Navigation is designed for both Individual and Businesses, the objective is to create avenue for users to have their separate account profile after registration where they can continue to access details as it appears on the interface page upon successful login; details of user navigation  include the following for individual:
 
 
 # Navigation
