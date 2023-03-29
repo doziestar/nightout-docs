@@ -11,9 +11,9 @@ const config = {
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid"],
-  title: "Nightout Docs",
-  tagline: "Nightout Docs",
-  favicon: "img/favicon.ico",
+  title: "Placio Docs",
+  tagline: "Placio  Docs",
+  favicon: "img/placio.jpg",
 
   // Set the production url of your site here
   url: "https://doziestar.github.io",
@@ -81,17 +81,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/nighout.png",
+      image: "img/placio.jpg",
       mermaid: {
         options: {
           maxTextSize: 50,
         },
       },  
       navbar: {
-        title: "Nightout Docs",
+        title: "Placio Docs",
         logo: {
-          alt: "Nightout logo",
-          src: "img/night.svg",
+          alt: "Placio Logo",
+          src: "img/placio.jpg",
         },
         items: [
           {
